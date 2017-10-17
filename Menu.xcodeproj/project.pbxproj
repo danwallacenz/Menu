@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3C9F88CF1F94397600CABB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F88CE1F94397600CABB0D /* AppDelegate.swift */; };
-		3C9F88D11F94397600CABB0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F88D01F94397600CABB0D /* ViewController.swift */; };
 		3C9F88D41F94397600CABB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9F88D21F94397600CABB0D /* Main.storyboard */; };
 		3C9F88D61F94397600CABB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9F88D51F94397600CABB0D /* Assets.xcassets */; };
 		3C9F88D91F94397600CABB0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9F88D71F94397600CABB0D /* LaunchScreen.storyboard */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		3C9F88CB1F94397600CABB0D /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9F88CE1F94397600CABB0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C9F88D01F94397600CABB0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C9F88D31F94397600CABB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C9F88D51F94397600CABB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C9F88D81F94397600CABB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 				3CE835291F95A98400BCEB10 /* SlideInPresentationController.swift */,
 				3CE8352B1F95AA0600BCEB10 /* SlideInPresentationAnimator.swift */,
 				3C9F88CE1F94397600CABB0D /* AppDelegate.swift */,
-				3C9F88D01F94397600CABB0D /* ViewController.swift */,
 				3C9F88D21F94397600CABB0D /* Main.storyboard */,
 				3C9F88D51F94397600CABB0D /* Assets.xcassets */,
 				3C9F88D71F94397600CABB0D /* LaunchScreen.storyboard */,
@@ -161,7 +158,6 @@
 				3CE8352E1F95AA8300BCEB10 /* MenuNavController.swift in Sources */,
 				3CE8352C1F95AA0600BCEB10 /* SlideInPresentationAnimator.swift in Sources */,
 				3CE835281F95A96B00BCEB10 /* SlideInPresentationManager.swift in Sources */,
-				3C9F88D11F94397600CABB0D /* ViewController.swift in Sources */,
 				3C9F88CF1F94397600CABB0D /* AppDelegate.swift in Sources */,
 				3CE835251F95A0CC00BCEB10 /* SuperViewController.swift in Sources */,
 				3CE8352A1F95A98400BCEB10 /* SlideInPresentationController.swift in Sources */,
