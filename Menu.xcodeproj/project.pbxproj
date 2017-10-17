@@ -17,6 +17,7 @@
 		3CE835281F95A96B00BCEB10 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE835271F95A96B00BCEB10 /* SlideInPresentationManager.swift */; };
 		3CE8352A1F95A98400BCEB10 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE835291F95A98400BCEB10 /* SlideInPresentationController.swift */; };
 		3CE8352C1F95AA0600BCEB10 /* SlideInPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8352B1F95AA0600BCEB10 /* SlideInPresentationAnimator.swift */; };
+		3CE835341F96BB9A00BCEB10 /* MenuItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE835331F96BB9A00BCEB10 /* MenuItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3CE835271F95A96B00BCEB10 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
 		3CE835291F95A98400BCEB10 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
 		3CE8352B1F95AA0600BCEB10 /* SlideInPresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationAnimator.swift; sourceTree = "<group>"; };
+		3CE835331F96BB9A00BCEB10 /* MenuItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		3C9F88CD1F94397600CABB0D /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				3CE835331F96BB9A00BCEB10 /* MenuItemViewController.swift */,
 				3CE835271F95A96B00BCEB10 /* SlideInPresentationManager.swift */,
 				3CE835291F95A98400BCEB10 /* SlideInPresentationController.swift */,
 				3CE8352B1F95AA0600BCEB10 /* SlideInPresentationAnimator.swift */,
@@ -156,6 +159,7 @@
 				3CE835281F95A96B00BCEB10 /* SlideInPresentationManager.swift in Sources */,
 				3C9F88CF1F94397600CABB0D /* AppDelegate.swift in Sources */,
 				3CE835251F95A0CC00BCEB10 /* SuperViewController.swift in Sources */,
+				3CE835341F96BB9A00BCEB10 /* MenuItemViewController.swift in Sources */,
 				3CE8352A1F95A98400BCEB10 /* SlideInPresentationController.swift in Sources */,
 				3C9F88E11F943B7A00CABB0D /* MenuTableViewController.swift in Sources */,
 			);
