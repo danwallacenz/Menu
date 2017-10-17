@@ -26,7 +26,7 @@ class SuperViewController: UIViewController {
     
     private func presentSideMenu() {
         let menuStoryboard = UIStoryboard(name: "Menu", bundle: Bundle.main)
-        guard let menuVC = menuStoryboard.instantiateViewController(withIdentifier: "MenuVC") as? MenuNavController else { return }
+        guard let menuVC = menuStoryboard.instantiateViewController(withIdentifier: "MenuVC") as? MenuTableViewController else { return }
         
         interactionController = UIPercentDrivenInteractiveTransition()
         menuVC.customTransitionDelegate.interactionController = interactionController
