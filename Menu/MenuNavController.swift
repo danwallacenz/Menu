@@ -12,17 +12,17 @@ class MenuNavController: UINavigationController {
 
     var interactionController: UIPercentDrivenInteractiveTransition?
     let customTransitionDelegate = SlideInPresentationManager()
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+
         modalPresentationStyle = .custom
         transitioningDelegate = customTransitionDelegate
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let panOut = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
         panOut.edges = .left
         view.addGestureRecognizer(panOut)
@@ -30,17 +30,17 @@ class MenuNavController: UINavigationController {
 }
 
 extension MenuNavController: UIGestureRecognizerDelegate {
-    
+
     // pan in transitions to next view controller
-    
+
     @objc func handleGesture(_ gesture: UIPanGestureRecognizer) {
         let translate = gesture.translation(in: gesture.view)
         let percent   = -translate.x / gesture.view!.bounds.size.width
-        
+
         if gesture.state == .began {
             interactionController = UIPercentDrivenInteractiveTransition()
             customTransitionDelegate.interactionController = interactionController
-            
+
             dismiss(animated: true)
         } else if gesture.state == .changed {
             interactionController?.update(percent)
@@ -54,11 +54,10 @@ extension MenuNavController: UIGestureRecognizerDelegate {
             }
             interactionController = nil
         }
-        
     }
-    
+
     // make sure it only recognizes upward gestures
-    
+
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if let pan = gestureRecognizer as? UIPanGestureRecognizer {
             let translation = pan.translation(in: pan.view)
@@ -68,3 +67,4 @@ extension MenuNavController: UIGestureRecognizerDelegate {
         return false
     }
 }
+
