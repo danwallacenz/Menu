@@ -35,7 +35,7 @@ class MenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         guard let menuVC = storyboard?.instantiateViewController(withIdentifier: "MenuItemVC") else { return }
-        navigationController?.pushViewController(menuVC, animated: true)
+        present(menuVC, animated: true, completion: nil)
     }
 }
 
