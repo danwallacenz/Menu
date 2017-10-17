@@ -31,14 +31,6 @@
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-        <!--Menu-->
-        <scene sceneID="mhF-gd-HwA">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Menu" id="5Gt-dA-rIt" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lvj-Ic-5Ej" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1434" y="1178"/>
-        </scene>
         <!--Super View Controller-->
         <scene sceneID="8UB-Ot-riy">
             <objects>

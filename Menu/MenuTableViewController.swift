@@ -9,7 +9,7 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
-
+    
     @IBAction func dismiss(_ sender: Any) {
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
