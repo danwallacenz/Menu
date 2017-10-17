@@ -14,6 +14,7 @@
 		3C9F88D91F94397600CABB0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9F88D71F94397600CABB0D /* LaunchScreen.storyboard */; };
 		3C9F88E11F943B7A00CABB0D /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F88E01F943B7A00CABB0D /* MenuTableViewController.swift */; };
 		3CA6F0A61F945D9300235E14 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA6F0A51F945D9300235E14 /* Menu.storyboard */; };
+		3CE835251F95A0CC00BCEB10 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE835241F95A0CC00BCEB10 /* SuperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3C9F88DA1F94397600CABB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C9F88E01F943B7A00CABB0D /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		3CA6F0A51F945D9300235E14 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		3CE835241F95A0CC00BCEB10 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3C9F88DA1F94397600CABB0D /* Info.plist */,
 				3C9F88E01F943B7A00CABB0D /* MenuTableViewController.swift */,
 				3CA6F0A51F945D9300235E14 /* Menu.storyboard */,
+				3CE835241F95A0CC00BCEB10 /* SuperViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				3C9F88D11F94397600CABB0D /* ViewController.swift in Sources */,
 				3C9F88CF1F94397600CABB0D /* AppDelegate.swift in Sources */,
+				3CE835251F95A0CC00BCEB10 /* SuperViewController.swift in Sources */,
 				3C9F88E11F943B7A00CABB0D /* MenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

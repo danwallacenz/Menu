@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Super View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SuperViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                     <navigationItem key="navigationItem" id="co5-l3-Kr6">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="g5t-E5-hYr">
                             <connections>
-                                <segue destination="5Gt-dA-rIt" kind="presentation" id="rhG-f1-xOx"/>
+                                <action selector="showMenu:" destination="BYZ-38-t0r" id="n2Q-yg-DXe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="1434" y="1178"/>
         </scene>
-        <!--View Controller-->
+        <!--Super View Controller-->
         <scene sceneID="8UB-Ot-riy">
             <objects>
-                <viewController id="tqq-fl-UCA" sceneMemberID="viewController">
+                <viewController id="tqq-fl-UCA" customClass="SuperViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQN-Kt-R95">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
                     <navigationItem key="navigationItem" id="UPy-f3-klR">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="8sg-uk-YXd">
                             <connections>
-                                <segue destination="5Gt-dA-rIt" kind="presentation" id="fWm-D3-c2k"/>
+                                <action selector="showMenu:" destination="tqq-fl-UCA" id="ch6-Ig-XU4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="816"/>
         </scene>
-        <!--View Controller-->
+        <!--Super View Controller-->
         <scene sceneID="8Zp-Zu-plT">
             <objects>
-                <viewController id="0by-SO-aID" sceneMemberID="viewController">
+                <viewController id="0by-SO-aID" customClass="SuperViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PeY-nm-pmF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
                     <navigationItem key="navigationItem" id="bnc-2a-rnH">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="Tl4-gc-pH0">
                             <connections>
-                                <segue destination="5Gt-dA-rIt" kind="presentation" id="bj3-WM-FeX"/>
+                                <action selector="showMenu:" destination="0by-SO-aID" id="OK8-38-6Xb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="540" y="1619"/>
         </scene>
-        <!--View Controller-->
+        <!--Super View Controller-->
         <scene sceneID="EkV-X1-uxG">
             <objects>
-                <viewController id="pqS-wd-L9H" sceneMemberID="viewController">
+                <viewController id="pqS-wd-L9H" customClass="SuperViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zlY-cd-xFm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,7 +96,7 @@
                     <navigationItem key="navigationItem" id="lfi-8t-gyW">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="QID-G4-a0f">
                             <connections>
-                                <segue destination="5Gt-dA-rIt" kind="presentation" id="27K-Se-xnp"/>
+                                <action selector="showMenu:" destination="pqS-wd-L9H" id="Ozi-j9-pbc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -203,7 +203,4 @@
             <point key="canvasLocation" x="-186" y="2299"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="27K-Se-xnp"/>
-    </inferredMetricsTieBreakers>
 </document>
