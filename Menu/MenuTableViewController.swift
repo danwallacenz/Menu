@@ -12,13 +12,13 @@ class MenuTableViewController: UITableViewController {
     
     var interactionController: UIPercentDrivenInteractiveTransition?
     let customTransitionDelegate = SlideInPresentationManager()
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        modalPresentationStyle = .custom
-        transitioningDelegate = customTransitionDelegate
-    }
+
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//
+//        modalPresentationStyle = .custom
+//        transitioningDelegate = customTransitionDelegate
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
