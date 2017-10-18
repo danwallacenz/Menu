@@ -17,6 +17,8 @@
 		3CE573281F9701C3006BD1DC /* PayAndTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE573271F9701C3006BD1DC /* PayAndTransferViewController.swift */; };
 		3CE5732A1F9701D8006BD1DC /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE573291F9701D8006BD1DC /* TimelineViewController.swift */; };
 		3CE5732C1F9701E9006BD1DC /* PayeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5732B1F9701E9006BD1DC /* PayeesViewController.swift */; };
+		3CE5732E1F9706FA006BD1DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5732D1F9706FA006BD1DC /* LoginViewController.swift */; };
+		3CE573311F9707AD006BD1DC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE573301F9707AD006BD1DC /* Login.storyboard */; };
 		3CE835251F95A0CC00BCEB10 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE835241F95A0CC00BCEB10 /* SuperViewController.swift */; };
 		3CE835281F95A96B00BCEB10 /* SlideInPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE835271F95A96B00BCEB10 /* SlideInPresentationManager.swift */; };
 		3CE8352A1F95A98400BCEB10 /* SlideInPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE835291F95A98400BCEB10 /* SlideInPresentationController.swift */; };
@@ -37,6 +39,8 @@
 		3CE573271F9701C3006BD1DC /* PayAndTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayAndTransferViewController.swift; sourceTree = "<group>"; };
 		3CE573291F9701D8006BD1DC /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		3CE5732B1F9701E9006BD1DC /* PayeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayeesViewController.swift; sourceTree = "<group>"; };
+		3CE5732D1F9706FA006BD1DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3CE573301F9707AD006BD1DC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		3CE835241F95A0CC00BCEB10 /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		3CE835271F95A96B00BCEB10 /* SlideInPresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationManager.swift; sourceTree = "<group>"; };
 		3CE835291F95A98400BCEB10 /* SlideInPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInPresentationController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		3C9F88CD1F94397600CABB0D /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				3CE5732F1F970788006BD1DC /* Login */,
 				3CE835381F96D5FF00BCEB10 /* SideMenu */,
 				3C9F88CE1F94397600CABB0D /* AppDelegate.swift */,
 				3C9F88D21F94397600CABB0D /* Main.storyboard */,
@@ -95,6 +100,15 @@
 				3CE5732B1F9701E9006BD1DC /* PayeesViewController.swift */,
 			);
 			path = "Tabbar View Controllers";
+			sourceTree = "<group>";
+		};
+		3CE5732F1F970788006BD1DC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3CE5732D1F9706FA006BD1DC /* LoginViewController.swift */,
+				3CE573301F9707AD006BD1DC /* Login.storyboard */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		3CE835381F96D5FF00BCEB10 /* SideMenu */ = {
@@ -172,6 +186,7 @@
 				3C9F88D91F94397600CABB0D /* LaunchScreen.storyboard in Resources */,
 				3C9F88D61F94397600CABB0D /* Assets.xcassets in Resources */,
 				3C9F88D41F94397600CABB0D /* Main.storyboard in Resources */,
+				3CE573311F9707AD006BD1DC /* Login.storyboard in Resources */,
 				3CA6F0A61F945D9300235E14 /* Menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE5732E1F9706FA006BD1DC /* LoginViewController.swift in Sources */,
 				3CE8352C1F95AA0600BCEB10 /* SlideInPresentationAnimator.swift in Sources */,
 				3CE835281F95A96B00BCEB10 /* SlideInPresentationManager.swift in Sources */,
 				3CE573281F9701C3006BD1DC /* PayAndTransferViewController.swift in Sources */,

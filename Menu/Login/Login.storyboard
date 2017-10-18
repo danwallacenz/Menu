@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="oau-gW-etl">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="0fT-Ij-3oW" customClass="LoginViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O6j-Rg-gZM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9F-b4-KyY">
+                                <rect key="frame" x="168" y="318" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="0fT-Ij-3oW" eventType="touchUpInside" id="gyz-tP-ppg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V9F-b4-KyY" firstAttribute="centerY" secondItem="O6j-Rg-gZM" secondAttribute="centerY" id="U3J-GB-k3l"/>
+                            <constraint firstItem="V9F-b4-KyY" firstAttribute="centerX" secondItem="O6j-Rg-gZM" secondAttribute="centerX" id="cpn-Pv-aFi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t2t-mM-3BT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p5y-xG-WpD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="z9p-J0-c9k"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJz-Uk-Okl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="205.54722638680661"/>
+        </scene>
+    </scenes>
+</document>

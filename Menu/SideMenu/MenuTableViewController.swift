@@ -35,10 +35,21 @@ class MenuTableViewController: UITableViewController {
     }
     
     @IBAction func loginOut(_ sender: UIButton) {
+        
+        if !isLoggedIn {
+            let loginStoryboard = UIStoryboard(name: "Login", bundle: Bundle.main)
+            guard let loginVC = loginStoryboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginViewController else { return }
+            presentingViewController?.dismiss(animated: true, completion: nil)
+            presentingViewController?.present(loginVC, animated: true, completion: nil)
+            
+
+        }
+        
         isLoggedIn = !isLoggedIn
         loggedInStatusLabel.text = isLoggedIn ? "Welcome John" : "You are logged out"
         let buttonText = isLoggedIn ? "Logout": "Login"
         sender.setTitle(buttonText, for: .normal)
+        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
