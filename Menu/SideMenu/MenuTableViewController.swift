@@ -16,8 +16,6 @@ class MenuTableViewController: UITableViewController {
         case accounts, paymentsAndTransfers, timeline, payees, profile, settings, contactUs, guestLogin, casNav, westpacPay, fxRates, findABranch
     }
     
-    @IBOutlet weak var headerView: UIView!
-    
     var interactionController: UIPercentDrivenInteractiveTransition?
     let customTransitionDelegate = SlideInPresentationManager()
 
@@ -31,10 +29,7 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let origHeaderFrame = tableView.tableHeaderView?.frame {
-            let higherFrame = CGRect(x: origHeaderFrame.origin.x, y: origHeaderFrame.origin.y, width: origHeaderFrame.width, height: origHeaderFrame.height * 2)
-            tableView.tableHeaderView?.frame = higherFrame
-        }
+        tableView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
         
         let panIn = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
         panIn.delegate = self
