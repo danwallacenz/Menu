@@ -32,7 +32,7 @@ class SuperViewController: UIViewController {
         
         interactionController = UIPercentDrivenInteractiveTransition()
         menuVC.customTransitionDelegate.interactionController = interactionController
-        menuVC.rootTabBarController = parent
+        menuVC.rootTabBarController = parent // for selecting tabs from menu
         
         present(menuVC, animated: true, completion: nil)
     }

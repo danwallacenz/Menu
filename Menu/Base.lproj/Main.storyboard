@@ -20,7 +20,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="co5-l3-Kr6">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="g5t-E5-hYr">
+                        <barButtonItem key="leftBarButtonItem" image="ic_dehaze" id="g5t-E5-hYr">
                             <connections>
                                 <action selector="showMenu:" destination="BYZ-38-t0r" id="n2Q-yg-DXe"/>
                             </connections>
@@ -42,7 +42,7 @@
                         <viewLayoutGuide key="safeArea" id="BRf-aT-ziA"/>
                     </view>
                     <navigationItem key="navigationItem" id="UPy-f3-klR">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="8sg-uk-YXd">
+                        <barButtonItem key="leftBarButtonItem" image="ic_dehaze" id="8sg-uk-YXd">
                             <connections>
                                 <action selector="showMenu:" destination="tqq-fl-UCA" id="ch6-Ig-XU4"/>
                             </connections>
@@ -64,7 +64,7 @@
                         <viewLayoutGuide key="safeArea" id="FVW-m0-6Ir"/>
                     </view>
                     <navigationItem key="navigationItem" id="bnc-2a-rnH">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Tl4-gc-pH0">
+                        <barButtonItem key="leftBarButtonItem" image="ic_dehaze" id="Tl4-gc-pH0">
                             <connections>
                                 <action selector="showMenu:" destination="0by-SO-aID" id="OK8-38-6Xb"/>
                             </connections>
@@ -86,7 +86,7 @@
                         <viewLayoutGuide key="safeArea" id="0eH-wd-J99"/>
                     </view>
                     <navigationItem key="navigationItem" id="lfi-8t-gyW">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="QID-G4-a0f">
+                        <barButtonItem key="leftBarButtonItem" image="ic_dehaze" id="QID-G4-a0f">
                             <connections>
                                 <action selector="showMenu:" destination="pqS-wd-L9H" id="Ozi-j9-pbc"/>
                             </connections>
@@ -195,4 +195,7 @@
             <point key="canvasLocation" x="-186" y="2299"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_dehaze" width="24" height="24"/>
+    </resources>
 </document>

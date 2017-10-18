@@ -10,11 +10,11 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
 
-    var rootTabBarController: UITabBarController?
+    @IBOutlet weak var loggedInStatusLabel: UILabel!
     
-    enum Selection: Int {
-        case accounts, paymentsAndTransfers, timeline, payees, profile, settings, contactUs, guestLogin, casNav, westpacPay, fxRates, findABranch
-    }
+    private var isLoggedIn = false
+    
+    var rootTabBarController: UITabBarController?
     
     var interactionController: UIPercentDrivenInteractiveTransition?
     let customTransitionDelegate = SlideInPresentationManager()
@@ -29,15 +29,17 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+//        tableView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
         
         let panIn = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
         panIn.delegate = self
         view.addGestureRecognizer(panIn)
     }
     
-    @IBAction func dismiss(_ sender: Any) {
-        presentingViewController?.dismiss(animated: true, completion: nil)
+    @IBAction func loginOut(_ sender: UIButton) {
+        isLoggedIn = !isLoggedIn
+        loggedInStatusLabel.text = isLoggedIn ? "Welcome John" : "You are logged out"
+        sender.titleLabel?.text = isLoggedIn ? "Logout": "Login" // does not work
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

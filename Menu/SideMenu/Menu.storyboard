@@ -21,12 +21,6 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsm-7B-H6t">
-                                    <rect key="frame" x="312" y="59" width="43" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are logged out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slZ-YE-xnr" userLabel="logged in status">
                                     <rect key="frame" x="8" y="59.5" width="147" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
@@ -40,15 +34,22 @@
                                         <constraint firstAttribute="width" constant="40" id="nDP-if-T4q"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dw-pn-Xlg">
+                                    <rect key="frame" x="317" y="58" width="38" height="30"/>
+                                    <state key="normal" title="Login"/>
+                                    <connections>
+                                        <action selector="loginOut:" destination="xCI-mD-RJ6" eventType="touchUpInside" id="0iJ-tC-cFB"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="slZ-YE-xnr" secondAttribute="bottom" constant="8" id="04K-QG-g9S"/>
-                                <constraint firstAttribute="bottom" secondItem="Nsm-7B-H6t" secondAttribute="bottom" constant="8" id="Mrl-M9-dYF"/>
+                                <constraint firstAttribute="bottom" secondItem="6Dw-pn-Xlg" secondAttribute="bottom" id="2ph-BC-YTU"/>
                                 <constraint firstItem="2bS-gZ-v0d" firstAttribute="leading" secondItem="MAH-7T-Sac" secondAttribute="leading" constant="8" id="Qxa-bs-DYH"/>
                                 <constraint firstItem="slZ-YE-xnr" firstAttribute="leading" secondItem="MAH-7T-Sac" secondAttribute="leading" constant="8" id="VhN-46-5hd"/>
+                                <constraint firstAttribute="trailing" secondItem="6Dw-pn-Xlg" secondAttribute="trailing" constant="20" symbolic="YES" id="bLq-fw-ZTM"/>
                                 <constraint firstItem="2bS-gZ-v0d" firstAttribute="top" secondItem="MAH-7T-Sac" secondAttribute="top" constant="20" symbolic="YES" id="hUu-eb-61v"/>
-                                <constraint firstAttribute="trailing" secondItem="Nsm-7B-H6t" secondAttribute="trailing" constant="20" symbolic="YES" id="tht-NP-3tD"/>
                             </constraints>
                         </view>
                         <sections>
@@ -279,12 +280,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gL4-wi-NzZ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="4zT-zN-o0g">
-                            <connections>
-                                <action selector="dismiss:" destination="xCI-mD-RJ6" id="3OU-QF-zWH"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="4zT-zN-o0g"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loggedInStatusLabel" destination="slZ-YE-xnr" id="nwU-hw-Wj8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1h1-Yc-9Ct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
