@@ -101,7 +101,7 @@
         <scene sceneID="t51-BP-IXH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZIx-fe-Hwr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Accounts" id="yHH-v1-mgv"/>
+                    <tabBarItem key="tabBarItem" title="Accounts" image="icNavAccountsActive" id="yHH-v1-mgv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9ML-R0-hzn">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -120,7 +120,7 @@
         <scene sceneID="z72-Rb-bxa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MFp-aS-jV0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Pay &amp; Transfer" id="0CH-el-98m"/>
+                    <tabBarItem key="tabBarItem" title="Pay &amp; Transfer" image="icNavTransferActive" id="0CH-el-98m"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="amg-fg-NEK">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -160,7 +160,7 @@
         <scene sceneID="jGj-qb-yjj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IzS-Xa-t8U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timeline" id="YmK-vx-4fY"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" image="icNavTimelineActive" id="YmK-vx-4fY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r1K-wg-E7g">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -179,7 +179,7 @@
         <scene sceneID="jhQ-nB-4Ev">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Szu-TT-Tx0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Payees" id="7g0-H4-2Dv"/>
+                    <tabBarItem key="tabBarItem" title="Payees" image="icNavPayeesActive" id="7g0-H4-2Dv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7R0-mc-KoH">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -196,6 +196,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icNavAccountsActive" width="26" height="22"/>
+        <image name="icNavPayeesActive" width="29" height="22"/>
+        <image name="icNavTimelineActive" width="26" height="23"/>
+        <image name="icNavTransferActive" width="27" height="24"/>
         <image name="ic_dehaze" width="24" height="24"/>
     </resources>
 </document>
