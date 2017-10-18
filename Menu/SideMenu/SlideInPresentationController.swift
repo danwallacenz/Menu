@@ -112,7 +112,7 @@ private extension SlideInPresentationController {
     }
     
     @objc func handleGesture(_ gesture: UIPanGestureRecognizer) {
-        if let sideMenuTableViewController = presentedViewController as? SideMenuTableViewController{
+        if let sideMenuTableViewController = presentedViewController as? MenuTableViewController{
             sideMenuTableViewController.handleGesture(gesture)
         }
     }
