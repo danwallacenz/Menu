@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Super View Controller-->
+        <!--Accounts View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SuperViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AccountsViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
-        <!--Super View Controller-->
+        <!--Pay And Transfer View Controller-->
         <scene sceneID="8UB-Ot-riy">
             <objects>
-                <viewController id="tqq-fl-UCA" customClass="SuperViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tqq-fl-UCA" customClass="PayAndTransferViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aQN-Kt-R95">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="476" y="816"/>
         </scene>
-        <!--Super View Controller-->
+        <!--Timeline View Controller-->
         <scene sceneID="8Zp-Zu-plT">
             <objects>
-                <viewController id="0by-SO-aID" customClass="SuperViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0by-SO-aID" customClass="TimelineViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PeY-nm-pmF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="540" y="1619"/>
         </scene>
-        <!--Super View Controller-->
+        <!--Payees View Controller-->
         <scene sceneID="EkV-X1-uxG">
             <objects>
-                <viewController id="pqS-wd-L9H" customClass="SuperViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pqS-wd-L9H" customClass="PayeesViewController" customModule="Menu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zlY-cd-xFm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
