@@ -29,8 +29,6 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        tableView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
-        
         let panIn = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
         panIn.delegate = self
         view.addGestureRecognizer(panIn)
@@ -39,7 +37,8 @@ class MenuTableViewController: UITableViewController {
     @IBAction func loginOut(_ sender: UIButton) {
         isLoggedIn = !isLoggedIn
         loggedInStatusLabel.text = isLoggedIn ? "Welcome John" : "You are logged out"
-        sender.titleLabel?.text = isLoggedIn ? "Logout": "Login" // does not work
+        let buttonText = isLoggedIn ? "Logout": "Login"
+        sender.setTitle(buttonText, for: .normal)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
