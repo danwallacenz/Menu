@@ -15,7 +15,7 @@ class SuperViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let panOut = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
+        let panOut = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handlePanOutGesture(_:)))
         panOut.edges = .left
         view.addGestureRecognizer(panOut)
     }
@@ -37,7 +37,7 @@ class SuperViewController: UIViewController {
         present(menuVC, animated: true, completion: nil)
     }
     
-    @objc func handleGesture(_ gesture: UIPanGestureRecognizer) {
+    @objc func handlePanOutGesture(_ gesture: UIPanGestureRecognizer) {
         let translate = gesture.translation(in: gesture.view)
         let percent   = translate.x / gesture.view!.bounds.size.width
         

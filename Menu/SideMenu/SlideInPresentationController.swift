@@ -102,7 +102,7 @@ private extension SlideInPresentationController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:)))
         dimmingView.addGestureRecognizer(tap)
         
-        let panIn = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
+        let panIn = UIPanGestureRecognizer(target: self, action: #selector(handlePanInGesture(_:)))
         panIn.delegate = presentedViewController as? UIGestureRecognizerDelegate
         dimmingView.addGestureRecognizer(panIn)
     }
@@ -111,9 +111,9 @@ private extension SlideInPresentationController {
         presentingViewController.dismiss(animated: true)
     }
     
-    @objc func handleGesture(_ gesture: UIPanGestureRecognizer) {
+    @objc func handlePanInGesture(_ gesture: UIPanGestureRecognizer) {
         if let sideMenuTableViewController = presentedViewController as? MenuTableViewController{
-            sideMenuTableViewController.handleGesture(gesture)
+            sideMenuTableViewController.handlePanInGesture(gesture)
         }
     }
 }

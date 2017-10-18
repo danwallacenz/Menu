@@ -29,7 +29,7 @@ class MenuTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let panIn = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
+        let panIn = UIPanGestureRecognizer(target: self, action: #selector(handlePanInGesture(_:)))
         panIn.delegate = self
         view.addGestureRecognizer(panIn)
     }
@@ -73,7 +73,7 @@ extension MenuTableViewController: UIGestureRecognizerDelegate {
     
     // pan in transitions to next view controller
     
-    @objc func handleGesture(_ gesture: UIPanGestureRecognizer) {
+    @objc func handlePanInGesture(_ gesture: UIPanGestureRecognizer) {
         let translate = gesture.translation(in: gesture.view)
         let percent   = -translate.x / gesture.view!.bounds.size.width
         
@@ -96,7 +96,7 @@ extension MenuTableViewController: UIGestureRecognizerDelegate {
         }
     }
     
-    // make sure it only recognizes upward gestures
+    // make sure it only recognizes leftward gestures
     
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if let pan = gestureRecognizer as? UIPanGestureRecognizer {
