@@ -9,7 +9,7 @@
 import UIKit
 
 class SuperViewController: UIViewController {
-
+    
     var interactionController: UIPercentDrivenInteractiveTransition?
 
     override func viewDidLoad() {
@@ -28,8 +28,11 @@ class SuperViewController: UIViewController {
         let menuStoryboard = UIStoryboard(name: "Menu", bundle: Bundle.main)
         guard let menuVC = menuStoryboard.instantiateViewController(withIdentifier: "MenuVC") as? MenuTableViewController else { return }
         
+        guard let parent = tabBarController else { fatalError("Not in UITabBarController") }
+        
         interactionController = UIPercentDrivenInteractiveTransition()
         menuVC.customTransitionDelegate.interactionController = interactionController
+        menuVC.rootTabBarController = parent
         
         present(menuVC, animated: true, completion: nil)
     }

@@ -9,6 +9,12 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
+
+    var rootTabBarController: UITabBarController?
+    
+    enum Selection: Int {
+        case accounts, paymentsAndTransfers, timeline, payees, profile, settings, contactUs, guestLogin, casNav, westpacPay, fxRates, findABranch
+    }
     
     var interactionController: UIPercentDrivenInteractiveTransition?
     let customTransitionDelegate = SlideInPresentationManager()
@@ -34,10 +40,18 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        guard let menuItemVC = storyboard?.instantiateViewController(withIdentifier: "MenuItemVC") else { return }
+        guard let menuItemVC = storyboard?.instantiateViewController(withIdentifier: "MenuItemVC") else { fatalError("No menuItemVC") }
 
         presentingViewController?.dismiss(animated: true, completion: nil)
-        presentingViewController?.present(menuItemVC, animated: true, completion: nil)
+        
+        print(indexPath.section, indexPath.row)
+        switch (indexPath.section, indexPath.row) {
+        case (0, _): // Tab bar selections
+            guard let tabBarController = rootTabBarController else { fatalError("No root") }
+            tabBarController.selectedIndex = indexPath.row
+        default:
+            presentingViewController?.present(menuItemVC, animated: true, completion: nil)
+        }
     }
 }
 
