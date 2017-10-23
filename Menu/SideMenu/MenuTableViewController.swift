@@ -12,7 +12,7 @@ class MenuTableViewController: UITableViewController {
 
     @IBOutlet weak var loggedInStatusLabel: UILabel!
     
-    private var isLoggedIn = false
+    private static var isLoggedIn = false
     
     var rootTabBarController: UITabBarController?
     
@@ -36,18 +36,16 @@ class MenuTableViewController: UITableViewController {
     
     @IBAction func loginOut(_ sender: UIButton) {
         
-        if !isLoggedIn {
+        if !MenuTableViewController.isLoggedIn {
             let loginStoryboard = UIStoryboard(name: "Login", bundle: Bundle.main)
             guard let loginVC = loginStoryboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginViewController else { return }
             presentingViewController?.dismiss(animated: true, completion: nil)
             presentingViewController?.present(loginVC, animated: true, completion: nil)
-            
-
         }
         
-        isLoggedIn = !isLoggedIn
-        loggedInStatusLabel.text = isLoggedIn ? "Welcome John" : "You are logged out"
-        let buttonText = isLoggedIn ? "Logout": "Login"
+        MenuTableViewController.isLoggedIn = !MenuTableViewController.isLoggedIn
+        loggedInStatusLabel.text = MenuTableViewController.isLoggedIn ? "Welcome Aju" : "You are logged out"
+        let buttonText = MenuTableViewController.isLoggedIn ? "Logout": "Login"
         sender.setTitle(buttonText, for: .normal)
         
     }

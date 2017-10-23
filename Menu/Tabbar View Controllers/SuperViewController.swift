@@ -10,10 +10,16 @@ import UIKit
 
 class SuperViewController: UIViewController {
     
+    var menuVC: MenuTableViewController?
+    
     var interactionController: UIPercentDrivenInteractiveTransition?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let menuStoryboard = UIStoryboard(name: "Menu", bundle: Bundle.main)
+        guard let menuVC = menuStoryboard.instantiateViewController(withIdentifier: "MenuVC") as? MenuTableViewController else { fatalError() }
+        self.menuVC = menuVC
         
         let panOut = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handlePanOutGesture(_:)))
         panOut.edges = .left
@@ -25,9 +31,8 @@ class SuperViewController: UIViewController {
     }
     
     private func presentSideMenu() {
-        let menuStoryboard = UIStoryboard(name: "Menu", bundle: Bundle.main)
-        guard let menuVC = menuStoryboard.instantiateViewController(withIdentifier: "MenuVC") as? MenuTableViewController else { return }
-        
+
+        guard let menuVC = menuVC else { fatalError() }
         guard let parent = tabBarController else { fatalError("Not in UITabBarController") }
         
         interactionController = UIPercentDrivenInteractiveTransition()
